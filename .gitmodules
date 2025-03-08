@@ -1,0 +1,6 @@
+[submodule "todo"]
+	path = todo
+	url = ./todo
+[submodule "colorbox"]
+	path = colorbox
+	url = ./colorbox
