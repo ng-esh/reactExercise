@@ -1,0 +1,26 @@
+.box-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem;
+  }
+  
+  .box {
+    display: inline-block;
+    border: 2px solid black;
+  }
+  
+  .remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .remove-btn:hover {
+    background: darkred;
+  }
+  

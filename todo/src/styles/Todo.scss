@@ -1,0 +1,86 @@
+@import "./animations.scss";
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  background: white;
+  transition: opacity 0.3s ease-in-out;
+
+  &.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+
+  .edit-form {
+    display: flex;
+    gap: 5px;
+
+    input {
+      flex-grow: 1;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 5px 10px;
+      background: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #218838;
+      }
+    }
+  }
+
+  button {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: opacity 0.2s;
+
+    &.remove-btn {
+      background: red;
+      color: white;
+      border: none;
+
+      &:hover {
+        background: darkred;
+      }
+    }
+
+    &.edit-btn {
+      background: #ffc107;
+      color: black;
+      border: none;
+
+      &:hover {
+        background: #e0a800;
+      }
+    }
+
+    &.complete-btn {
+      background: #17a2b8;
+      color: white;
+      border: none;
+
+      &:hover {
+        background: #138496;
+      }
+    }
+  }
+
+  &.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+}
